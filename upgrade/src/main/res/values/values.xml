@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogFragmentTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="DialogFragmentTheme.Overshoot.Animator" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_overshoot_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_overshoot_top_out</item>
+    </style>
+
+    <string name="dialog_new_version_title">发现新版本</string>
+    <string name="dialog_up_grade">升级</string>
+
+</resources>

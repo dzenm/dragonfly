@@ -1,0 +1,6 @@
+include ':upgrade'
+include ':download_manager'
+include ':permission'
+include ':download'
+include ':app'
+rootProject.name = "Dragonfly"
